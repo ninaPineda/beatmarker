@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Garet', 'Poppins', sans-serif;
+    color: #333;
+    background: #ffffff;
+  }
+  
+  header {
+    background: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: #e55b8c;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center; /* <<< Logo und Links auf eine Linie */
+    justify-content: space-between; /* <<< Abstand dazwischen */
+    padding: 20px 40px;
+    background-color: white;
+  }
+  
+  .navbar-brand img {
+    height: 50px; /* <<< kleineres Logo */
+    width: auto; /* <<< Breite automatisch */
+  }
+
+  .logo-img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex; /* <<< WICHTIG: Links nebeneinander */
+    gap: 30px; /* Abstand zwischen den Links */
+    margin: 0;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: #3c8e9c; /* hübsche Farbe aus deiner Palette */
+    font-size: 18px;
+    font-family: 'Garet', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #e55b8c; /* Hover-Effekt */
+  }
+
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: auto; /* schiebt die Links nach rechts */
+  }
+  .navbar-nav li a {
+    text-decoration: none;
+    color: #3c8e9c;
+    font-size: 18px;
+    font-family: 'Garet', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .navbar-nav li a:hover {
+    color: #e55b8c;
+  }
+  
+  .hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #e55b8c 0%, #3c8e9c 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 22px;
+    max-width: 700px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #ffffff;
+    color: #e55b8c;
+    padding: 14px 34px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #3c8e9c;
+    color: #ffffff;
+  }
+  
+  .section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 36px;
+    color: #e55b8c;
+    margin-bottom: 20px;
+  }
+  
+  .section p, .features-list {
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .features-list li {
+    margin: 10px 0;
+  }
+  
+  footer {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    background: #ffffff;
+    margin-top: 40px;
+  }
+
+  .logo-img {
+    height: 50px;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('Assets/mockup-hero.png') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* dunkler Filter */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-content h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 22px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  .appstore-badge {
+    margin-top: 20px;
+    width: 180px;
+  }
+
+  .video-section {
+    background-color: #3c8e9c;
+    padding: 80px 20px;
+    color: white;
+  }
+  
+  .video-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  .video-wrapper {
+    flex: 0 1 300px; /* kleiner */
+    max-width: 230px; /* feste Breite wie iPhone */
+  }
+  
+  .video-wrapper video {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    object-fit: contain;
+  }
+  
+  .video-text {
+    flex: 1 1 400px;
+    max-width: 500px;
+  }
+  
+  .video-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .video-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e0f7fa;
+  }
